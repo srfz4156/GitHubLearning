@@ -1,0 +1,116 @@
+#Video 01
+- It give easily recover files.
+- Who introduced issue and when.
+- Roll back to previously working state.
+
+#History of version control system.
+- Local Version Control System.
+. You can keep track but if you loose HD then you will loose.
+
+#Centralised VCS.
+- PULL and PUSH introduced from a server but only one was doing on the master version of the file.
+
+#Distributed VCS.
+- Every one will have the .git file.
+
+Linus torwall the writer of linux kernel.
+- It saves your file snapshot and can give whenever you want.
+- You can do all things in your local then you can send it to remote eg; github.
+- You can push to remote after doing several changes.
+- It uses checksum to maintain integrity.
+. There is SHA-1 checksum of different softwares and tools to find out.
+
+
+#Video 02
+
+- Download and next and next. You will get git cmd line tool and git bash.
+- pwd (present directory).
+- cd/c ( To travel any folder).
+- Type git to know cmnd of git.
+- Right click and click on git bash here.
+
+#Git
+
+- git config --global user.name "Sarfaraz"
+. git config --global user.name (only to see name of the git)
+- git config --global user.email "sarfaraz.sa.ahmad@gmail.com"
+. git config --global user.email (only to see mail of the git)
+- git config --list (Give lot of list and name and mail to).
+
+#Video 03
+
+Staging area 
+It will start tracking your files and then you can commit it to make a version of it or it can also give you which file is changed... 
+- .git folder will keep all information about the changes.
+
+- git status ( to know whether it is tracked or not ).
+- git init ( it will start tracking ).
+- git add --a (add all files to staging area)
+- git commit -m "initial commit" ( to commit a change or save a snapshot)
+- git log ( To see all commits )
+- git add first.txt ( To add only sepecific file to staging area)
+
+#Video 05
+
+#GitClonning
+
+- rm -rf .git (to delete all git tracking folder)
+- git clone https:thelink/directory (it will download the file)
+
+#Video 06
+
+- For the first time you need to put all files in staging area to track it is modified or not. Then you can commit it and again it will come in tracking area. Only doing git init will not track changes. You need to put all files in staging area.
+
+#Video 07
+
+- You can also do in power shell.
+- touch error.log (a linux cmd used to create a file).
+- .gitignore (it will ignore files)
+. *.log (all with the extension will be ignored)
+. folder/ (all things of the folder name anywhere will be ignored)
+- git ignores empty folder.
+-/folder/ ( will ignore outer dir)
+
+** There is two folder with same name one is outer and another one is inner. While ignoring outer one only the inner parent folder name is showing instead of full directory.
+
+#Video 08
+
+-If you change the file after sending in staging area then it will also show in red color as modified in working directory.
+
+- git diff (it compares staging area and working area).
+- git add . (another cmd for staging area)
+- git diff --staged (It compares current staging directory with previous commit).
+- If you run git diff in beginning or not modified files then it will show nothing.
+
+#video 09
+
+- git commit -a -m "Direct Commit"
+- q to exit from git log.
+
+#Video 10
+- git rm third.txt (It will remove the file and stage to deleted but if we delete manually we will have to stage the deleted changes).
+
+- git mv first.xlsx firsta.xlsx (It will rename first.xlsx to firsta.xlsx and stage the files. Basically we are removing first.xlsx to firsta.xlsx).
+
+- git rm --cached db.accdb (It will start untracking the file name).
+
+#Video 13
+- ctrl + ( To zoom the repo).
+- shift + insert (To paste the copied in git bash)
+
+- Uploading files on remote github.
+. Create a remote git account that can be github/gitlab/gitbash.
+. After that create a repository on github(I will continue with github).
+. Then run 
+	git push -u origin master
+	git remote add origin link copied from the github
+. Doing git push at this stage will not work because I didn't gave SSH keys.
+. Then search for "SSH keys on github".
+. ADD SSH keys
+.
+.
+. Pushing on github.
+-- git push -u origin master
+
+Challenge 01:
+Changing email id and name.
