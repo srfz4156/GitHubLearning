@@ -114,3 +114,6 @@ It will start tracking your files and then you can commit it to make a version o
 
 Challenge 01:
 Changing email id and name.
+-- Done after adding own mail Id.
+
+. 
